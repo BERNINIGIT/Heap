@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace Heap
 {
-    public class MaxBinaryHeap : BinaryHeap
+    public class MinBinaryHeap : BinaryHeap
     {
-        public MaxBinaryHeap() : base((a, b) => a < b)
+        public MinBinaryHeap() : base((a, b) => a > b)
         {
-            
+
         }
-        public int? GetMax()
+        public int? GetMin()
         {
             return base.GetFirst();
         }
-        public int? Peekmax()
+        public int? PeekMin()
         {
             return base.PeekFirst();
         }
